@@ -1,0 +1,34 @@
+{
+  "name": "xbrody/yii2-guppy",
+
+  "type": "yii2-extension",
+
+  "description": "Easy & Fast CMS based Modx",
+  "keywords": ["yii2", "cms", "guppy"],
+  "license": "BSD-3-Clause",
+  "support": {
+    "issues": "https://github.com/yiisoft/yii2/issues?labels=ext%3Aimagine",
+    "forum": "http://www.yiiframework.com/forum/",
+    "wiki": "http://www.yiiframework.com/wiki/",
+    "irc": "irc://irc.freenode.net/yii",
+    "source": "https://github.com/yiisoft/yii2"
+  },
+  "authors": [
+    {
+      "name": "Dmitriy Chistoborodov",
+      "email": "skillet123q@gmail.com"
+    }
+  ],
+
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "mervick/yii2-mthaml": "*",
+    "twig/twig": "~1.11"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "xbrody\\guppy\\": ""
+    }
+  }
+}
