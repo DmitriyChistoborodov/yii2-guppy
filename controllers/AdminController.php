@@ -1,4 +1,6 @@
 <?php
+namespace xbrodies\guppy\controllers;
+
 use yii\web\Controller;
 
 /**
