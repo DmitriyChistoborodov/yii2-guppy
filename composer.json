@@ -1,5 +1,5 @@
 {
-  "name": "xbrody/yii2-guppy",
+  "name": "xbrodies/yii2-guppy",
 
   "type": "yii2-extension",
 
@@ -28,7 +28,7 @@
 
   "autoload": {
     "psr-4": {
-      "xbrody\\guppy\\": ""
+      "xbrodies\\guppy\\": ""
     }
   }
 }
