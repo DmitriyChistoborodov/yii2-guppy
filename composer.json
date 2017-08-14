@@ -1,6 +1,6 @@
 {
   "name": "xbrodies/yii2-guppy",
-
+  "version" : "1.0",
   "type": "yii2-extension",
 
   "description": "Easy & Fast CMS based Modx",
