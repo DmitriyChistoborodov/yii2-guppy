@@ -12,7 +12,7 @@ class GuppyAdminController extends Controller
 {
     public function actionIndex()
     {
-        return "ok!";
+        return $this->render("index.haml");
     }
 
     public function actionLogin()
