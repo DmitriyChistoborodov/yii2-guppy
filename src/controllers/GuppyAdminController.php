@@ -8,11 +8,15 @@ use yii\web\Controller;
  * Date: 14.08.2017
  * Time: 16:37
  */
-class AdminController extends Controller
+class GuppyAdminController extends Controller
 {
-
     public function actionIndex()
     {
         return "ok!";
+    }
+
+    public function actionLogin()
+    {
+
     }
 }

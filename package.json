@@ -1,0 +1,29 @@
+{
+  "name": "yii2-guppy",
+  "version": "1.2.0",
+  "description": "Easy & Fast CMS based modx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitriyChistoborodov/yii2-guppy.git"
+  },
+  "keywords": [
+    "yii2",
+    "cms",
+    "guppy"
+  ],
+  "author": "xbrodies (Dmitriy Chistoborodov)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitriyChistoborodov/yii2-guppy/issues"
+  },
+  "homepage": "https://github.com/DmitriyChistoborodov/yii2-guppy#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
