@@ -14,7 +14,7 @@ class GuppyAdminController extends Controller
 
     public function actionIndex()
     {
-        return $this->render("dw.twig");
+        return $this->render("index.twig");
     }
 
     public function actionLogin()
