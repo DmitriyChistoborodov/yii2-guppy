@@ -17,12 +17,13 @@
   ],
 
   "require": {
-    "yiisoft/yii2": "~2.0.0"
+    "yiisoft/yii2": "~2.0.0",
+    "dektrium/yii2-user": "^0.9.0@dev"
   },
 
   "extra": {
     "branch-alias": {
-      "dev-master": "1.8.x-dev"
+      "dev-master": "1.9.x-dev"
     }
   },
 
