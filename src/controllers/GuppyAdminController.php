@@ -10,10 +10,11 @@ use yii\web\Controller;
  */
 class GuppyAdminController extends Controller
 {
-    public $layout = "base.twig";
+//    public $layout = "base.twig";
 
     public function actionIndex()
     {
+
         return $this->render("index.twig");
     }
 
