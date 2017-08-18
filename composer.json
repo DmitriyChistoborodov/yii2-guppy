@@ -17,14 +17,12 @@
   ],
 
   "require": {
-    "yiisoft/yii2": "~2.0.0",
-    "mervick/yii2-mthaml": "*",
-    "twig/twig" : "~1.11"
+    "yiisoft/yii2": "~2.0.0"
   },
 
   "extra": {
     "branch-alias": {
-      "dev-master": "1.7.x-dev"
+      "dev-master": "1.8.x-dev"
     }
   },
 
