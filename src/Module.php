@@ -7,7 +7,7 @@
 
 namespace xbrodies\guppy;
 
-use dektrium\user;
+
 use yii\base\Application;
 use yii\base\BootstrapInterface;
 use yii\helpers\ArrayHelper;
@@ -59,7 +59,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
     public $g_modules = [
         'user' => [
 
-            'class' => 'dektrium\user\Module',
+//            'class' => 'dektrium\user\Module',
 
             // If this option is set to true, module will show flash messages
             // using integrated widget. Otherwise you will need to handle it
@@ -98,7 +98,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
             // - STRATEGY_INSECURE Email will be changed without any confirmation.
             // - STRATEGY_SECURE Confirmation messages will be sent to both new and old user's
             // email addresses and user must click both confirmation links.
-            'emailChangeStrategy' => \dektrium\user\Module::STRATEGY_DEFAULT,
+//            'emailChangeStrategy' => \dektrium\user\Module::STRATEGY_DEFAULT,
 
             // The time in seconds before a confirmation token becomes invalid.
             // After expiring this time user have to request new confirmation token on special page.
@@ -165,7 +165,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
             [
                 'class' => 'yii\web\UrlRule',
                 'pattern' => $this->id,
-                'route' => $this->id . '/guppy-admin/index'
+                'route' => $this->id . '/default/index'
             ],
         ], false);
 
