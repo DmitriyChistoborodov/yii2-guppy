@@ -8,18 +8,10 @@ use yii\web\Controller;
  * Date: 14.08.2017
  * Time: 16:37
  */
-class GuppyAdminController extends Controller
+class DefaultController extends Controller
 {
-//    public $layout = "base.twig";
-
     public function actionIndex()
     {
-
         return $this->render("index.twig");
-    }
-
-    public function actionLogin()
-    {
-
     }
 }

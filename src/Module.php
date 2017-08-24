@@ -32,6 +32,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
     public $g_components = [
 
+
         'user' => [
             'class' => 'yii\web\User',
             'identityClass' => 'dektrium\user\models\User',
@@ -81,7 +82,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
             // If this option is set to true, module sends email that contains a confirmation
             // link that user must click to complete registration.
-            'enableConfirmation' => true,
+            'enableConfirmation' => false,
 
             // If this option is to true, users will be able to log in even though
             // they didn't confirm his account.
@@ -99,7 +100,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
             // - STRATEGY_INSECURE Email will be changed without any confirmation.
             // - STRATEGY_SECURE Confirmation messages will be sent to both new and old user's
             // email addresses and user must click both confirmation links.
-            'emailChangeStrategy' => \dektrium\user\Module::STRATEGY_DEFAULT,
+//            'emailChangeStrategy' => \dektrium\user\Module::STRATEGY_DEFAULT,
 
             // The time in seconds before a confirmation token becomes invalid.
             // After expiring this time user have to request new confirmation token on special page.
@@ -139,7 +140,8 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
             // The rules to be used in URL management.
             'urlRules' => []
-        ]
+        ],
+
     ];
 
     public function __construct($id, $parent = null, array $config = [])
@@ -161,12 +163,20 @@ class Module extends \yii\base\Module implements BootstrapInterface
      */
     public function bootstrap($app)
     {
+        $app->getUrlManager()->addRules([
+            [
+                'class' => 'yii\web\UrlRule',
+                'pattern' => $this->id,
+                'route' => $this->id . '/guppy-admin/index'
+            ],
+        ], false);
+
+
         $app->setModules($this->g_modules);
         $app->setComponents($this->g_components);
-        $app->bootstrap = '\dektrium\user\Bootstrap';
+
+        // TODO: fixed this shit
 //        $daw = new \dektrium\user\Bootstrap();
 //        $daw->bootstrap($app);
     }
-
-
 }
