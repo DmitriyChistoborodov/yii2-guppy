@@ -7,12 +7,10 @@
 
 namespace xbrodies\guppy;
 
-
-use Yii;
+use dektrium\user;
 use yii\base\Application;
 use yii\base\BootstrapInterface;
 use yii\helpers\ArrayHelper;
-use yii\i18n\PhpMessageSource;
 
 class Module extends \yii\base\Module implements BootstrapInterface
 {
@@ -100,7 +98,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
             // - STRATEGY_INSECURE Email will be changed without any confirmation.
             // - STRATEGY_SECURE Confirmation messages will be sent to both new and old user's
             // email addresses and user must click both confirmation links.
-//            'emailChangeStrategy' => \dektrium\user\Module::STRATEGY_DEFAULT,
+            'emailChangeStrategy' => \dektrium\user\Module::STRATEGY_DEFAULT,
 
             // The time in seconds before a confirmation token becomes invalid.
             // After expiring this time user have to request new confirmation token on special page.
