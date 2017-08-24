@@ -17,9 +17,8 @@
   ],
 
   "require": {
-    "yiisoft/yii2": "~2.0.0",
-    "dektrium/yii2-user": "^0.9.0@dev",
-    "dektrium/yii2-rbac": "1.0.0-alpha@dev"
+    "yiisoft/yii2": "~2.0.0"
+
   },
 
   "config": {
@@ -34,7 +33,7 @@
 
   "extra": {
     "branch-alias": {
-      "dev-master": "1.11.x-dev"    }
+      "dev-master": "1.12.x-dev"    }
   },
 
   "autoload": {
