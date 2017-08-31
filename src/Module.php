@@ -15,14 +15,15 @@ class Module extends \yii\base\Module implements BootstrapInterface
     public $controllerNamespace = 'xbrodies\guppy\controllers';
 
     public $g_components;
-
     public $g_modules;
+    public $g_params;
 
     public function __construct($id, $parent = null, array $config = [])
     {
         // Merge default configurations with override
         $config['g_modules'] = ArrayHelper::merge($this->g_modules, include("config/modules.php"));
         $config['g_components'] = ArrayHelper::merge($this->g_components, include("config/components.php"));
+        $config['g_params'] = ArrayHelper::merge($this->g_params, include("config/params.php"));
 
         parent::__construct($id, $parent, $config);
     }
@@ -40,6 +41,7 @@ class Module extends \yii\base\Module implements BootstrapInterface
 
         $app->setModules($this->g_modules);
         $app->setComponents($this->g_components);
+        $app->params = ArrayHelper::merge($app->params, $this->g_params);
 
         // TODO: fixed this shit
         $daw = new \dektrium\user\Bootstrap();

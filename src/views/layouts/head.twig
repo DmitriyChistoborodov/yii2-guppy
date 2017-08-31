@@ -1,0 +1,8 @@
+<meta charset="{{ app.charset }}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guppy - {{ html.encode(this.title) }}</title>
+
+{{ html.csrfMetaTags | raw }}
+
+{{ void(this.head) }}

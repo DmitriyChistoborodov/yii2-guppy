@@ -17,22 +17,16 @@
   ],
 
   "require": {
-    "yiisoft/yii2": "~2.0.0"
-  },
+    "yiisoft/yii2": "~2.0.0",
+    "yiisoft/yii2-twig": "~2.0.0",
 
-  "config": {
-    "process-timeout": 1800,
-    "fxp-asset":{
-      "installer-paths": {
-        "npm-asset-library": "vendor/npm",
-        "bower-asset-library": "vendor/bower"
-      }
-    }
+    "bower-asset/jstree": "~3.3.4",
+    "npm-assets/semantic-ui": "*"
   },
 
   "extra": {
     "branch-alias": {
-      "dev-master": "1.12.x-dev"    }
+      "dev-master": "1.13.x-dev"    }
   },
 
   "autoload": {

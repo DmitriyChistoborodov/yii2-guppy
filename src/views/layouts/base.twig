@@ -1,1 +1,24 @@
-{{ "dwaDWw"|lower }}
+{{ register_asset_bundle('xbrodies/guppy/GuppyAssets') }}
+{{ void(this.beginPage()) }}
+<!DOCTYPE html>
+<html lang="{{ app.language }}">
+<head>
+    {% include "head.twig" %}
+</head>
+<body>
+{{ void(this.beginBody()) }}
+
+    {% include "header.twig" %}
+
+    {{ content | raw}}
+
+    <footer class="footer">
+        <div class="container">
+            {# footer content #}
+        </div>
+    </footer>
+
+    {{ void(this.endBody()) }}
+</body>
+</html>
+{{ void(this.endPage()) }}

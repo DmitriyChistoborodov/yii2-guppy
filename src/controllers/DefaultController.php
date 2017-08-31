@@ -14,14 +14,10 @@ use yii\web\Response;
  */
 class DefaultController extends Controller
 {
+    public $layout = "base.twig";
+
     public function actionIndex()
     {
-        Yii::$app->response->format = Response::FORMAT_JSON;
-        header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS");
-        header("Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization");
-        $pages = Page::find()->asArray(true)->all();
-
-        return $pages;
+        return $this->render('index.twig');
     }
 }
